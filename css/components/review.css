@@ -1,0 +1,203 @@
+/* Testimonials */
+.hp-testimonials {
+    width: 100%;
+    height: fit-content;
+    padding: 20px 0px;
+    margin: 0 auto;
+    margin-top: 130px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.testimonials-col1 {
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    margin-left: 10%;
+}
+
+.testimonials-col2 {
+    display: flex;
+}
+
+.main-img {
+    width: 400px;
+    height: 400px;
+    background-color: rgb(194, 194, 194);
+}
+
+.col21 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 100%;
+    background-image: linear-gradient(white, white), linear-gradient(#A41E34, #A41E34);
+    background-repeat: no-repeat, no-repeat;
+    background-size: 20% 100%, 80% 100%;
+    background-position: left, right;
+}
+
+.head1 {
+    font-size: 1.12rem;
+    letter-spacing: 0.08rem;
+    font-family: "Merriweather", sans-serif;
+    font-weight: bolder;
+    color: #A41E34;
+    margin: 0;
+}
+
+.head2 {
+    font-size: 3.75rem;
+    font-weight: bolder;
+    font-family: "Merriweather";
+    margin: 0;
+}
+
+.line1 {
+    color: #A41E34;
+    font-size: 2.3rem;
+    font-family: "Merriweather Sans", sans-serif;
+    margin: 0;
+}
+
+.para {
+    font-size: 1.3rem;
+    font-family: "Merriweather Sans", sans-serif;
+    margin: 0;
+    letter-spacing: 0.08rem;
+    line-height: 1.8rem;
+    font-weight: 500;
+}
+
+.by {
+    color: #A41E34;
+    font-size: 1.5rem;
+    font-family: "Merriweather Sans", sans-serif;
+}
+
+.col22 {
+    width: 500px;
+    background-color: #A41E34;
+    padding: 20px 0px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.testimonials-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    height: 100%;
+    margin: 5px 0px;
+    flex-wrap: wrap;
+    row-gap: 10px;
+}
+
+.testi-ppl {
+    display: flex;
+    column-gap: 10px;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 40px 10px 10px;
+    border-radius: 1000px;
+}
+
+.testi-name {
+    text-align: center;
+    color: white;
+    font-family: "Merriweather Sans", sans-serif;
+    font-size: 1.5rem;
+}
+
+.testi-ppl:hover {
+    background-color: rgb(142, 38, 38);
+    cursor: pointer;
+}
+
+.active {
+    background-color: rgb(142, 38, 38);
+}
+
+.testi-img {
+    width: 60px;
+    height: 60px;
+    border-radius: 1000px;
+}
+.ti1{
+    background-image: url("../../assets/images/anjali.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.ti2{
+    background-image: url("../../assets/images/ravi.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.ti3{
+    background-image: url("../../assets/images/meena.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.ti4{
+    background-image: url("../../assets/images/sanjay.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.ti5{
+    background-image: url("../../assets/images/bharat.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+@media (max-width: 1300px) {
+    .hp-testimonials {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .testimonials-col1 {
+        width: 90%;
+        margin: 30px 0px 0px 0px;
+    }
+    .testimonials-col2 {
+        flex-direction: column;
+        align-items: center;
+        width: 90%;
+    }
+    .col22 {
+        width: 100%;
+    }
+    .testimonials-list {
+        flex-direction: row;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    .col21 {
+        width: 100%;
+        background-size: 100% 80%, 100% 20%;
+        background-position: top, bottom;
+    }
+    .testi-name {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 950px) {
+    .testi-name {
+        display: none;
+    }
+}
+@media (max-width: 650px) {
+    .line1 {
+        font-size: 0.8rem;
+    }
+}
+@media (max-width: 500px) {    
+    .testi-img {
+        width: 40px;
+        height: 40px;
+    }
+}

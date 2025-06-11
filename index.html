@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rajalakshmi HealthCity</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Merriweather+Sans:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/components/header.css">
+    <link rel="stylesheet" href="css/components/news.css">
+    <link rel="stylesheet" href="css/components/review.css">
+    <link rel="stylesheet" href="css/components/footer.css">
+</head>
+
+<body> <!-- Navbar -->
+    <nav class="navbar navbar-expand-md fixed-top px-3 transition-navbar navbar-transparent navbar-dark" id="mainNavbar"
+        style="z-index:1100; height:60px;">
+        <div class="container-fluid d-flex  align-items-center">
+            <a class="navbar-brand" href="#">
+                <img src="assets/icons/logo.png" alt="Logo" class="img-fluid">
+            </a>
+            <button style="display: none; width: 0px; height: 0px;" class="navbar-toggler" type="button" id="menuToggleBtn" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+          <ul class="navbar-nav align-items-center gap-2 text-white text-center ms-auto me-3">
+                <li class="nav-item hw"><i class="bi bi-bookmarks-fill"></i> VISIT</li>
+                <li class="nav-item hw"><i class="bi bi-pencil-fill"></i> APPLY</li>
+                <li class="nav-item hw"><i class="bi bi-envelope-fill"></i> REQUEST INFO</li>
+                <li class="nav-item hw"><i class="bi bi-heart-fill"></i> GIVE</li>
+                <li></li>
+            </ul>
+           <button class="btn btn-light text-danger fw-bold rounded-pill px-3 btt" type="button" id="menuButton">
+  <i class="bi bi-search me-1"></i> Menu
+</button>
+        </div>
+    </nav>
+    
+      <div id="sideMenu" class="side-menu">
+  <div class="side-menu-header d-flex justify-content-between align-items-center">
+    <img src="assets/icons/logo.png" alt="Logo" style="height: 80px;">
+    <button id="closeMenu1" class="btn text-white fs-4">&times;</button>
+  </div>
+  <div class="side-menu-body">
+    <br />
+    <ul class="footer-ul1">
+      <li><a class="l1" href="#intro">Intro</a></li>
+      <li><a class="l1" href="#community">Community</a></li>
+      <li><a class="l1" href="#words">In their words</a></li>
+      <li><a class="l1" href="#education">Education</a></li>
+      <li><a class="l1" href="#gallery">Gallery</a></li>
+      <li><a class="l1" href="#stories">Stories about us</a></li>
+      <li><a class="l1" href="#testimonials">Testimonials</a></li>
+      <li><a class="l1" href="#news">Latest News</a></li>
+    </ul>
+  </div>
+</div>
+<div id="menuOverlay" class="overlay"></div>
+    
+    <!-- Video Hero Section -->
+    <div class="video-hero">
+        <video autoplay muted loop playsinline class="main-video">
+            <source src="assets/images/main.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <main class="d-flex align-items-center justify-content-start text-white px-3 flex-column"
+            style="min-height: 100vh; padding-top: 320px; padding-left: 120px; position: relative; z-index: 2">
+            <div class="d-flex justify-content-start align-items-center w-100">
+                <div class="ms-5" style="max-width: 800px; width: 100%">
+                    <h3 class="fw-bold mb-3 h1">
+                        How will you shape the future of healthcare?
+                    </h3>
+                    <p class="lead" >
+                        At Rajalakshmi Medical College, We train the medical leaders of
+                        tomorrow. You'll be motivated to
+                        think critically, come up with new ideas, and heal here. Our
+                        cutting-edge labs, demanding academic programs, and caring
+                        community enable you to advance medical knowledge.
+                    </p>
+                </div>
+            </div>
+
+            <div class="d-flex justify-content-center align-items-stretch flex-wrap w-100 mt-5 border-top border-bottom"
+                style="max-width: 90%; position: relative; bottom:50px;">
+                <!-- Card 1 -->
+                <a class="academic-card" href="academics.html">
+                    <div class="academic-bg" style="background-image: url('assets/images/embrace.jpg')"></div>
+                    <div class="academic-content">
+                        <span style="
+                font-size: 0.75rem;
+                font-weight: bold;
+                background-color: #e63946;
+                color: #000;
+                padding: 3px 8px;
+                border-radius: 2px;
+                margin-bottom: 10px;
+                display: inline-block;
+              ">ACADEMIC RIGOR</span>
+                        <h4 style="font-weight: bold">Embrace Challenge</h4>
+                    </div>
+                </a>
+
+                <!-- Card 2 -->
+                <div class="academic-card">
+                    <div class="academic-bg" style="background-image: url('assets/images/buildyournetwork.jpg')"></div>
+                    <div class="academic-content">
+                        <span style="
+                font-size: 0.75rem;
+                font-weight: bold;
+                background-color: #00f0ff;
+                color: #000;
+                padding: 3px 8px;
+                border-radius: 2px;
+                margin-bottom: 10px;
+                display: inline-block;
+              ">POWERFUL OUTCOMES</span>
+                        <h4 style="font-weight: bold">Build Your Network</h4>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="academic-card">
+                    <div class="academic-bg" style="background-image: url('assets/images/immence.jpg')"></div>
+                    <div class="academic-content">
+                        <span style="
+                font-size: 0.75rem;
+                font-weight: bold;
+                background-color: #ff0057;
+                color: #000;
+                padding: 3px 8px;
+                border-radius: 2px;
+                margin-bottom: 10px;
+                display: inline-block;
+              ">EXPERIENTIAL LEARNING</span>
+                        <h4 style="font-weight: bold">Immerse Yourself</h4>
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="academic-card">
+                    <div class="academic-bg" style="background-image: url('assets/images/findyourplace.jpg')"></div>
+                    <div class="academic-content">
+                        <span style="
+                font-size: 0.75rem;
+                font-weight: bold;
+                background-color: #f4e04d;
+                color: #000;
+                padding: 3px 8px;
+                border-radius: 2px;
+                margin-bottom: 10px;
+                display: inline-block;
+              ">CAMPUS LIFE</span>
+                        <h4 style="font-weight: bold">Find Your Place</h4>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- popup-->
+
+    <!-- popup-->
+    <!-- Intro Section -->
+    <div class="intro_section" id="intro">
+        <div class="part1">
+            <p class="field_label">LIBERAL ARTS IN PRACTICE</p>
+            <p class="field_intro_title">Rajalakshmi HealthCity Opens Doors</p>
+            <p class="field_intro_para">Our faculty lead students to reach further, to achieve their goals and to effect
+                change in the professions and passions they pursue.</p>
+            <a href="#" class="button">FIND YOUR PROGRAM</a>
+        </div>
+        <div class="part2">
+            <div class="box1">
+                <div class="box1-img jp">
+                    <div class="content">
+                        <div class="jump"><p class="field_label">IMMERSE AND COMMUNICATE</p>
+                        <p class="field_title">Graduate Studies</p></div>
+                    </div>
+                </div>
+            </div>
+            <a class="box2" href="academics.html">
+                <div class="box2-img jp">
+                    <div class="content">
+                        <div class="jump"> <p class="field_label">EXPERIENCE AND PREPARE</p>
+                        <p class="field_title">Academics</p></div>
+                    </div>
+                </div>
+
+            </a>
+            <div class="box3">
+                <div class="box3-img jp" >
+                    <div class="content">
+                        <div class="jump"> <p class="field_label">ENGAGE AND CHALLENGE</p>
+                        <p class="field_title">Experiential Learning</p></div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div><br><br><br><br><br>
+
+    <!-- Banner 1 -->
+    <div class="banner">
+        <div class="banner-left">
+            <div class="banner-text">
+                <div class="main-heading">Congratulations, Departments of RHC!</div>
+            </div>
+        </div>
+        <div class="banner-right">
+            <div class="cta-container">
+                <a href="#" class="cta-link">
+                    <div class="cta-button">See Videos and Photos From Commencement</div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Color Changing Slide 1 -->
+    <div class="slide-container" id="community">
+        <div class="slide-left">
+            <h1 class="slide-title">A Community<br>That Supports You</h1>
+            <p class="slide-subtitle">At RHC, we live to learn. And you'll learn to thrive.</p>
+            <ul class="nav-list1">
+                <li class="nav-item1" id="item1">Financial Aid & Scholarships</li>
+                <li class="nav-item1" id="item2">Your Coaching Team</li>
+                <a href="academics.html"><li class="nav-item1" id="item3">Academic Resources</li></a>
+                <li class="nav-item1" id="item4">Student Support</li>
+            </ul>
+        </div>
+        <div class="slide-right">
+            <div class="background-highlight1" style="background-color: #E63946;">
+                <div class="image-wrapper1"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Video Cards -->
+    <div class="video-section" id="words">
+        <h1>In Their Words</h1>
+        <div class="video-carousel">
+            <!-- Video Card 1 -->
+            <div class="video-card" onclick="playVideo('https://youtube.com/shorts/91cUbc8o3pQ?si=9AlWRqhTkEo-zCY-')">
+                <div class="blue-box"></div>
+                <div class="video-frame">
+                    <img src="https://img.youtube.com/vi/91cUbc8o3pQ/hqdefault.jpg" class="video-thumbnail" alt="Video">
+                    <div class="video-overlay">
+                        <button class="play-btn">▶</button>
+                        <div class="watch-text">Watch Story</div>
+                    </div>
+                </div>
+                <div class="video-caption">
+                    <div class="caption-title">Exploring Student Life</div>
+                    <div class="caption-name">Ariana Handelman '25</div>
+                </div>
+            </div>
+
+            <!-- Video Card 2 -->
+            <div class="video-card" onclick="playVideo('https://youtube.com/shorts/3vbIzHSwyyI?si=ysR7ktUY2UodesqD')">
+                <div class="blue-box"></div>
+                <div class="video-frame">
+                    <img src="https://img.youtube.com/vi/3vbIzHSwyyI/hqdefault.jpg" class="video-thumbnail" alt="Video">
+                    <div class="video-overlay">
+                        <button class="play-btn">▶</button>
+                        <div class="watch-text">Watch Story</div>
+                    </div>
+                </div>
+                <div class="video-caption">
+                    <div class="caption-title">Journey in STEM</div>
+                    <div class="caption-name">Liam Carter '24</div>
+                </div>
+            </div>
+
+            <!-- Video Card 3 -->
+            <div class="video-card" onclick="playVideo('https://youtube.com/shorts/hEN_5XQUrhc?si=O4HVPzqQhETo9Pj1')">
+                <div class="blue-box"></div>
+                <div class="video-frame">
+                    <img src="https://img.youtube.com/vi/hEN_5XQUrhc/hqdefault.jpg" class="video-thumbnail" alt="Video">
+                    <div class="video-overlay">
+                        <button class="play-btn">▶</button>
+                        <div class="watch-text">Watch Story</div>
+                    </div>
+                </div>
+                <div class="video-caption">
+                    <div class="caption-title">From Fear to Confidence</div>
+                    <div class="caption-name">Nora Benson '23</div>
+                </div>
+            </div>
+
+            <!-- Video Card 4 -->
+            <div class="video-card" onclick="playVideo('https://youtube.com/shorts/Li7Oq2byZT4?si=klXr7SAfYVRMkoZh')">
+                <div class="blue-box"></div>
+                <div class="video-frame">
+                    <img src="https://img.youtube.com/vi/Li7Oq2byZT4/hqdefault.jpg" class="video-thumbnail" alt="Video">
+                    <div class="video-overlay">
+                        <button class="play-btn">▶</button>
+                        <div class="watch-text">Watch Story</div>
+                    </div>
+                </div>
+                <div class="video-caption">
+                    <div class="caption-title">Living the Campus Life</div>
+                    <div class="caption-name">Jordan Ray '26</div>
+                </div>
+            </div>
+
+            <!-- Video Card 5 -->
+            <div class="video-card" onclick="playVideo('https://youtube.com/shorts/obxSNhFUeVU?si=RD5wJfL2j-tNsiB7')">
+                <div class="blue-box"></div>
+                <div class="video-frame">
+                    <img src="https://img.youtube.com/vi/obxSNhFUeVU/hqdefault.jpg" class="video-thumbnail" alt="Video">
+                    <div class="video-overlay">
+                        <button class="play-btn">▶</button>
+                        <div class="watch-text">Watch Story</div>
+                    </div>
+                </div>
+                <div class="video-caption">
+                    <div class="caption-title">Why I Chose This College</div>
+                    <div class="caption-name">Emily Song '25</div>
+                </div>
+            </div>
+
+            <!-- Video Card 6 -->
+            <div class="video-card" onclick="playVideo('https://youtube.com/shorts/skEiERTaxG8?si=45mxh38IVfjXosPb')">
+                <div class="blue-box"></div>
+                <div class="video-frame">
+                    <img src="https://img.youtube.com/vi/skEiERTaxG8/hqdefault.jpg" class="video-thumbnail" alt="Video">
+                    <div class="video-overlay">
+                        <button class="play-btn">▶</button>
+                        <div class="watch-text">Watch Story</div>
+                    </div>
+                </div>
+                <div class="video-caption">
+                    <div class="caption-title">My Research Story</div>
+                    <div class="caption-name">Chris Morales '22</div>
+                </div>
+            </div>
+
+            <!-- Video Card 7 -->
+            <div class="video-card" onclick="playVideo('https://youtu.be/rYEDA3JcQqw')">
+                <div class="blue-box"></div>
+                <div class="video-frame">
+                    <img src="https://img.youtube.com/vi/rYEDA3JcQqw/hqdefault.jpg" class="video-thumbnail" alt="Video">
+                    <div class="video-overlay">
+                        <button class="play-btn">▶</button>
+                        <div class="watch-text">Watch Story</div>
+                    </div>
+                </div>
+                <div class="video-caption">
+                    <div class="caption-title">Making a Difference</div>
+                    <div class="caption-name">Sofia Patel '25</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Banner 2 -->
+    <div class="banner">
+        <div class="banner-left">
+            <div class="banner-text">
+                <div class="main-heading">Make the Most of Your Summer</div>
+            </div>
+        </div>
+        <div class="banner-right">
+            <div class="cta-container">
+                <a href="#" class="cta-link">
+                    <div class="cta-button">Explore Summer Study 2025</div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Color Changing Slide 2 -->
+    <div class="slide-container" id="education">
+        <div class="slide-left">
+            <h1 class="slide-title">An Education for<br>Everyone</h1>
+            <p class="slide-subtitle">No matter what your pathway to higher education,<br>Muhlenberg College is ready
+                for you</p>
+            <ul class="nav-list2">
+                <li class="nav-item2" id="item5">Undergraduate Admissions</li>
+                <li class="nav-item2" id="item6">Insurance and affordable care</li>
+                <li class="nav-item2" id="item7">Graduate Studies</li>
+                <li class="nav-item2" id="item8">Visit Us</li>
+            </ul>
+        </div>
+        <div class="slide-right">
+            <div class="background-highlight2" style="background-color: #E63946;">
+                <div class="image-wrapper2"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Banner 3 -->
+    <div class="banner">
+        <div class="banner-left">
+            <div class="banner-text">
+                <h1 class="main-heading">Connect With Our Campus Community</h1>
+            </div>
+        </div>
+        <div class="banner-right">
+            <div class="cta-container">
+                <a href="#" class="cta-link">
+                    <button class="cta-button">Explore Your Visit Options</button>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Art Gallery -->
+    <div class="art-gallery" id="gallery">
+        <header class="gallery-header">
+            <h1>Rajalakshmi Healthcity By the Numbers</h1>
+        </header>
+
+        <div class="vertical-grid">
+            <!-- COLUMN 1: Box 1 (60%) + Box 3 (40%) -->
+            <div class="column">
+                <div class="card dark-card" style="flex: 60%">
+                    <p class="card-title">15</p>
+                    <p class="card-desc">Average class size</p>
+                </div>
+                <div class="card custom-red-card" style="flex: 40%">
+                    <p class="card-title">100%</p>
+                    <p class="card-desc">
+                        of first-year students receiving some form of financial aid
+                    </p>
+                    <img src="i2.jpg" alt="Aid" class="card-img">
+                </div>
+            </div>
+
+            <!-- COLUMN 2: Box 4 (40%) + Box 5 (60%) -->
+            <div class="column">
+                <div class="card custom-red-card" style="flex: 40%">
+                    <p class="card-title" style="color: #fff">91%</p>
+                    <p class="card-desc" style="color: #fff">
+                        of first-year students return for their second year
+                    </p>
+                    <img src="i2.jpg" alt="Students" class="card-img">
+                </div>
+                <div class="card black-card" style="flex: 60%">
+                    <p class="card-title">18,000+</p>
+                    <p class="card-desc">Internship opportunities available to students</p>
+                </div>
+            </div>
+
+            <!-- COLUMN 3: Box 6 (60%) + Box 7 (40%) -->
+            <div class="column">
+                <div class="card red-card" style="flex: 60%">
+                    <p class="card-title">$20k - $34k</p>
+                    <p class="card-desc">Merit scholarship range</p>
+                </div>
+                <div class="card light-card" style="flex: 40%">
+                    <img src="i2.jpg" alt="Study abroad" class="card-img">
+                    <p class="card-title" style="color: #a6192e">&gt;50%</p>
+                    <p class="card-desc">Students study abroad</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Stories Carousel -->
+    <div class="stories-container" id="stories">
+        <div class="stories-inner">
+            <div class="stories-row">
+                <div class="stories-text-col">
+                    <p class="stories-small">Stories of Impact</p>
+                    <h1 class="stories-title">Our Leadership</h1>
+                    <h5 class="stories-subtitle">
+                        Discover the transformative possibilities of the challenging, supportive RHC
+                        experience and see how our community shapes the world.
+                    </h5>
+                </div>
+                <div class="stories-carousel-col">
+                    <div class="carousel-track">
+                        <div class="carousel-card" style="background-color: #f4f4f4; color: rgb(0,0,0)">
+                            <img src="assets/images/VC SIR.jpg" alt="Strong Return on Investment">
+                            <h3>Dr. Haree Shankar Meganathan</h3>
+                            <h6 class="leadh6">I'm Dr. Haree S Meganathan, a radiologist by training and an educationist by passion. As the Vice Chairman of Rajalakshmi Institutions, I've had the privilege of helping build institutions that combine clinical depth, academic excellence, and long-term societal impact.
+
+Since 1997, Rajalakshmi Institutions has been committed to creating learning environments that empower students to lead with purpose. Rajalakshmi HealthCity carries this legacy forward into the realm of healthcare — where education, research, and compassionate care meet on one integrated campus.
+
+Our medical college and teaching hospital are anchored in a strong academic foundation, supported by modern infrastructure and faculty who are deeply invested in shaping tomorrow's healthcare professionals. Alongside this, we deliver accessible, patient-centered care through our general and super-specialty services, with a focus on dignity, empathy, and clinical excellence.
+
+From medicine, nursing and pharmacy to allied health sciences and medical research, every part of Rajalakshmi HealthCity is designed to work in harmony — serving people across all walks of life, and setting new benchmarks for healthcare delivery in India.
+
+We focus on raising the standard of what's possible in healthcare and education — through thoughtful design, values-driven leadership, and an unwavering commitment to quality in every detail.
+
+With extensive experience in medical education and healthcare administration, our Vice Chairman brings a wealth of knowledge and vision to our institution. Their leadership has been instrumental in shaping our institution's growth and development.</h6>
+                            
+                        </div>
+                        <div class="carousel-card" style="background-color: #a6192e; color: #fff">
+                            <img src="assets/images/dean.jpg" alt="Celebrating the Class of 2025">
+                            <h3>Dr. K. Vanitha</h3>
+                            <h6 class="leadh61">MBBS., MD (PAEDIATRICS)., DCH</h6>
+                            <h6 class="leadh6">Dr. K. Vanitha, Dean of Rajalakshmi Health City completed MD(Paediatrics) from Madras Medical College in 1994 and held various Academic and Administrative posts at Government Medical Colleges of Tamil Nadu for more than 20 years.
+
+Under National Health Mission, she looked after NICU activities and brought down the death rate of neonatal mortality at Coimbatore Medical and district level. She was awarded the Best Doctor award by the Government of Tamil Nadu in 2020 for COVID-19 activities.
+
+Currently she is associated with Rajalakshmi Health City for more than a year and actively managing the Medical College for its establishment.</h6>
+                            
+                        </div>
+                        <div class="carousel-card" style="background-color: #000; color: #fff">
+                            <img src="assets/images/medical director.jpg" alt="Campaign Exceeds $125M Goal">
+                            <h3>Dr. Sukumaran Annamalai</h3>
+                            <h6 class="leadh61">MBBS., MD (GENERAL MEDICINE)., D.H.H.M</h6>
+                            <h6 class="leadh6">Dr. Sukumaran Annamalai, MD(Gen, Medicine), D.H.H.M is an alumni of Stanley Medical College and worked as Professor of General Medicine for more than 20 years at various Government Medical Colleges of Tamil Nadu. He also worked in the Medical Education Department of Government of Tamil Nadu for more than five years as Deputy/Joint Director.
+
+He also held the posts of Dean and Medical Superintendent for more than a decade in various private Medical Colleges.
+
+His good commanding skills and administrative skills as a Medical Superintendent helps Rajalakshmi Health City and hospital to develop as a renowned in the entire area.</h6>
+                            
+                        </div>
+                        <div class="carousel-card" style="background-color: #f4f4f4; color: #000">
+                            <img src="assets/images/medical superindent.jpg" alt="Global Scholars Program">
+                            <h3>Dr. Ushadevi Gopalan</h3>
+                            <h6 class="leadh61">MBBS, M.D, DGO, PhD</h6>
+                            <h6 class="leadh6">DR. Ushadevi Gopalan did her UG & PG from JIPMER Pondicherry and worked for more than 18 years in various Medical Colleges in Tamil nadu as UG & PG teacher.
+
+She has held the post of Head of the Department of Obstetrics & Gynecology and has trained many PG students and has been guide for their post Graduate Thesis.
+
+Her administrative skills, Research abilities, Clinical Acumen and teaching skills have made her an asset at Annaii Medical College and Hospital and helped to develop teaching and research in our College.</h6>
+                           
+                        </div>
+                       
+                        
+                        
+                        
+                        
+                    </div>
+                    <div class="carousel-arrows">
+                        <button class="btn btn-light abc" onclick="scrollCarousel(-1)">
+                            <i class="bi bi-arrow-left" style="font-size: 30px"></i>
+                        </button>
+                        <button class="btn btn-light abc" onclick="scrollCarousel(1)">
+                            <i class="bi bi-arrow-right" style="font-size: 30px"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Testimonials -->
+    <div class="hp-testimonials" id="testimonials">
+        <div class="testimonials-col1">
+            <p class="head1">HEALTHCITY VOICES</p>
+            <p class="head2">From the Source</p>
+            <p class="line1"></p>
+            <p class="para" id="testimonial-text">"My name is Anjali, and I'm from Chennai. A few days ago, I had a
+                sudden health issue and was rushed to Rajalakshmi Medical College. The doctors and nurses were
+                incredibly supportive and acted quickly. I was admitted for two days, and I received excellent care,
+                including quality medical attention, nutritious food, and a comfortable stay. I'm really grateful for
+                their kindness and service."</p>
+            <p class="by"><i>— Anjali</i></p>
+        </div>
+
+        <div class="testimonials-col2">
+            <div class="col21">
+                <div class="main-img">
+                    <img src="assets/images/anjali.jpg" alt="Anjali"
+                        style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
+            </div>
+            <div class="col22">
+                <ul class="testimonials-list">
+                    <li class="testi-ppl active" onclick="changeTestimonial('anjali')">
+                        <div class="testi-img ti1"></div>
+                        <i class="testi-name">Anjali</i>
+                    </li>
+                    <li class="testi-ppl" onclick="changeTestimonial('ravi')">
+                        <div class="testi-img ti2"></div>
+                        <i class="testi-name">Ravi</i>
+                    </li>
+                    <li class="testi-ppl" onclick="changeTestimonial('meena')">
+                        <div class="testi-img ti3"></div>
+                        <i class="testi-name">Meena</i>
+                    </li>
+                    <li class="testi-ppl" onclick="changeTestimonial('sanjay')">
+                        <div class="testi-img ti4"></div>
+                        <i class="testi-name">Sanjay</i>
+                    </li>
+                    <li class="testi-ppl" onclick="changeTestimonial('bharat')">
+                        <div class="testi-img ti5"></div>
+                        <i class="testi-name">Bharat</i>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- News Section -->
+    <div class="news-container" id="news">
+        <h4 class="section-title">NEWS AT RAJALAKSHMI HEALTHCITY</h4>
+            <div id="news-list">
+                <div class="news-item">
+                    <div class="news-content">
+                        <div class="news-date">May 29, 2025</div>
+                        <div class="news-title">
+                            <a href="index.html" class="news-title-link">AI-Enabled Imaging Revolutionizes
+                                Diagnostics</a>
+                        </div>
+                        <div class="news-description">
+                            Nick Flatto '10 is working on "Operation Mincemeat," a musical about a British operation of
+                            the same name that took place during World War II.
+                        </div>
+                    </div>
+                    <img src="assets/images/ai.jpg"
+                        alt="AI-Enabled Imaging Revolutionizes Diagnostics" class="news-image">
+                </div>
+                <div class="news-item">
+                    <div class="news-content">
+                        <div class="news-date">May 22, 2025</div>
+                        <div class="news-title">
+                            <a href="index.html" class="news-title-link">Working Together</a>
+                        </div>
+                        <div class="news-description">
+                            Community internships challenge students to build skills and relationships through their
+                            work with partner organizations in Allentown and the greater Lehigh Valley.
+                        </div>
+                    </div>
+                    <img src="assets/images/working2.jpg" alt="Working Together"
+                        class="news-image">
+                </div>
+            </div>
+        </a>
+    </div>
+
+    <!-- Banner 4 -->
+    <div class="banner">
+        <div class="banner-left">
+            <div class="banner-text">
+                <div class="main-heading">Step Through Our Red Doors</div>
+            </div>
+        </div>
+        <div class="banner-right">
+            <div class="cta-container">
+                <a href="#" style="text-decoration: none">
+                    <div class="cta-button">Apply</div>
+                </a>
+                <a href="#" style="text-decoration: none">
+                    <div class="cta-button">Enroll</div>
+                </a>
+            </div>
+        </div>
+    </div><br><br>
+
+    <!-- Footer -->
+    <div class="footer">
+        <a href="#">
+            <img src="assets/icons/logo2.png" alt="logo" class="footer-logo">
+        </a>
+        <div>
+            <p style="text-align: center;"><b>Quick links</b></p>
+            <ul class="footer-ul">
+                <li><a href="#mainNavbar">Menu</a></li>
+                <li><a href="#intro">Intro</a></li>
+                <li><a href="#community">Community</a></li>
+                <li><a href="#words">In their words</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#stories">Stories about us</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#news">Latest News</a></li>
+            </ul>
+        </div>
+
+        <ul class="footer-ul">
+            <li>
+                <a href="https://www.facebook.com/pages/Rajalakshmi%20Health%20City/111427425099127/" target="_blank"
+                    rel="noopener noreferrer" class="footer-link">
+                    <img src="assets/icons/facebook.jpg" alt="facebook" class="footer-icon">
+                    <p class="footer-p">Facebook</p>
+                </a>
+            </li>
+            <li>
+                <a href="https://x.com/RAJALAKSHMIHOSP" target="_blank" rel="noopener noreferrer" class="footer-link">
+                    <img src="assets/icons/twitter.jpg" alt="twitter" class="footer-icon">
+                    <p class="footer-p">X/Twitter</p>
+                </a>
+            </li>
+            <li>
+                <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer" class="footer-link">
+                    <img src="assets/icons/linkedin.jpg" alt="linkedin" class="footer-icon">
+                    <p class="footer-p">LinkedIn</p>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com/rajalakshmi_hospital/" target="_blank" rel="noopener noreferrer"
+                    class="footer-link">
+                    <img src="assets/icons/instagram.jpg" alt="instagram" class="footer-icon">
+                    <p class="footer-p">Instagram</p>
+                </a>
+            </li>
+            <li>
+                <a href="https://youtube.com/" target="_blank" rel="noopener noreferrer" class="footer-link">
+                    <img src="assets/icons/youtube.jpg" alt="youtube" class="footer-icon">
+                    <p class="footer-p">YouTube</p>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
