@@ -2,18 +2,39 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: "Merriweather Sans", sans-serif;
+
 }
 .navbar {
   padding: 10px 0;
   height: 60px;
 }
+.header1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.contact-btn{
+  background-color: #A41E34;
+  color: white;
+}
+
+.contact-btn:hover{
+  background-color: #891529;
+  color: white;
+}
 #menuOverlay{
     display: none;
+}
+.navbar-brand{
+  margin-right: 30px;
 }
 .img-fluid {
   height: 50px;
   object-fit: contain;
+}
+.header2{
+  display: flex;
 }
 .container-fluid{
   justify-content: space-evenly;
@@ -39,8 +60,12 @@
 
 .hw:hover {
   cursor: pointer;
-  color: #2e2d2d;
+  
 }
+.hw{
+font-size: 16px;
+}
+
 
 @media (max-width: 576px) {
   .navbar-nav {
@@ -71,13 +96,9 @@
   }
 
 }
-@media (min-width:1200px) {
-
-  .navbar-brand{
-    padding-left: 270px;
-  }
+@media (min-width:1400px) {
   .btt{
-    margin-right: 200px;
+    margin-right: 20px;
   }
   .academicsh6{
     padding-left: 300px;
@@ -160,7 +181,7 @@
 }
 
 .footer-ul1 li a:hover {
-  text-decoration: underline;
+  text-decoration: none;
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 8px;
 }
@@ -204,13 +225,24 @@ body.no-scroll {
         border-right:2px solid white ;
     }
 }
-@media (max-width:770px) {
-    .hw{
+@media (max-width:1450px) {
+    .hw , .contact-btn{
         display: none;
+    }
+    .hw1{
+      display: block;
     }
     #menuButton{
         display: block;
     }
-    
-    
+    .header1{
+      justify-content: space-around;
+    }
+}
+
+main{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 }

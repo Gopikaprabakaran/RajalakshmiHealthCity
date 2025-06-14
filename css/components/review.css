@@ -1,5 +1,7 @@
 /* Testimonials */
-.hp-testimonials {
+*{
+  
+}.hp-testimonials {
     width: 100%;
     height: fit-content;
     padding: 20px 0px;
@@ -42,7 +44,7 @@
 .head1 {
     font-size: 1.12rem;
     letter-spacing: 0.08rem;
-    font-family: "Merriweather", sans-serif;
+  
     font-weight: bolder;
     color: #A41E34;
     margin: 0;
@@ -51,20 +53,19 @@
 .head2 {
     font-size: 3.75rem;
     font-weight: bolder;
-    font-family: "Merriweather";
     margin: 0;
 }
 
 .line1 {
     color: #A41E34;
     font-size: 2.3rem;
-    font-family: "Merriweather Sans", sans-serif;
+    
     margin: 0;
 }
 
 .para {
     font-size: 1.3rem;
-    font-family: "Merriweather Sans", sans-serif;
+    
     margin: 0;
     letter-spacing: 0.08rem;
     line-height: 1.8rem;
@@ -74,7 +75,7 @@
 .by {
     color: #A41E34;
     font-size: 1.5rem;
-    font-family: "Merriweather Sans", sans-serif;
+    
 }
 
 .col22 {
@@ -110,7 +111,7 @@
 .testi-name {
     text-align: center;
     color: white;
-    font-family: "Merriweather Sans", sans-serif;
+    
     font-size: 1.5rem;
 }
 
